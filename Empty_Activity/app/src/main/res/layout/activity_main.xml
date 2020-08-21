@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bio_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/nicknameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            style="@style/NameStyle"
+            android:textSize="25sp"
+            android:background="@color/colorAccent"
+            android:paddingBottom="@dimen/small_padding"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/what_is_your_nickname"
+            style="@style/NameStyle"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/done_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:text="@string/done" />
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/bio"
+            style="@style/NameStyle"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/dice_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/empty_dice"
+            tools:src="@drawable/dice_1" />
+
+        <Button
+            android:id="@+id/roll_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/roll_label" />
+
+    </LinearLayout>
+</ScrollView>
